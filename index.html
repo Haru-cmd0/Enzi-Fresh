@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzi Fresh</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px; /* Add margin to the bottom */
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: #eafaf1;
+            padding: 10px;
+            border-left: 5px solid #2ecc71;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2c3e50;
+            color: #fff;
+            width: 100%;
+        }
+
+        .paw-emoji {
+            font-size: 1.5em;
+        }
+
+        .dynamic-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0; /* Add some space above and below */
+            padding: 20px;
+            background-color: #fff; /* Keep it off the background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dynamic-images img {
+            width: 200px; /* Slightly larger for visibility */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease; /* Add hover effect */
+        }
+
+        .dynamic-images img:hover {
+            transform: scale(1.1); /* Grows slightly on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo2.png" alt="Enzi Fresh Logo" style="width: 100px; height: auto;">
+        <h1>Enzi Fresh</h1>
+        <p>La solución perfecta para la manchas y olores</p>
+    </header>
+    <main>
+        <div class="highlight">
+            <h2>¿Qué es Enzi Fresh?</h2>
+            <p>Es un limpiador que utiliza enzimas naturales para descomponer los compuestos orgánicos presentes en los orines y otros desechos de las mascotas. Estas enzimas actúan desde la raíz del problema, eliminando no solo la suciedad visible, sino también el olor que puede quedar impregnado en superficies como pisos, alfombras o muebles.</p>
+            <p>Enzi Fresh limpia y elimina las partículas responsables del mal olor de manera efectiva. Esto evita que tus mascotas vuelvan a orinar en el mismo sitio. Ya sea que estés limpiando orines en el suelo, el sofá o una alfombra, Enzi Fresh es un producto apto para una amplia variedad de materiales, sin dañarlos.</p>
+            <p>Seguro para tus mascotas y el hogar, los productos químicos fuertes, como el límpido, pueden irritar las vías respiratorias y la piel de tus mascotas. Nuestro limpiador Enzi Fresh es biodegradable, hipoalergénico y completamente seguro para gatos y perros.</p>
+            <p>Un limpiador enzimático es el aliado contra manchas y olores en hogares con mascotas; ya que limpia profundamente y también cuida la salud y bienestar de los peluditos y de todos en tu hogar.</p>
+        </div>
+
+        <h2>¿Cómo Usar El Limpiador Enzimático Para Eliminar Orina De Tus Mascotas?</h2>
+        <ul>
+            <li>Retira el exceso de orina, si la mancha es reciente, seca la mayor cantidad posible con papel absorbente o un paño limpio.</li>
+            <li>Aplica Enzi Fresh directamente sobre la zona afectada, cubriendo toda la mancha, incluyendo los bordes, para evitar residuos.</li>
+            <li>Deja actuar las enzimas, deja que el producto actúe durante unos minutos para que descomponga las partículas responsables del mal olor.</li>
+            <li>Finalmente, limpia con un paño húmedo, retire los residuos y deje que la superficie se seque naturalmente.</li>
+        </ul>
+
+        <!-- SECCIÓN DE IMÁGENES REUBICADA AQUÍ -->
+        <div class="dynamic-images" id="dynamic-images"></div>
+
+        <h2>Para Prevenir y Mantener el Piso Limpio</h2>
+        <ul>
+            <li>Remueve el polvo y mugre visible, con escoba o aspiradora.</li>
+            <li>Utiliza un trapero o mopa exclusivo para la aplicación del producto, humedece con agua el trapero, limpia el piso y escurre el trapero.</li>
+            <li>Disuelve 200ml en un litro de agua o rocía Enzi Fresh directamente sobre el trapero o mopa de manera generosa, pasa el trapero sobre el piso de manera uniforme y deja que la superficie se seque naturalmente.</li>
+        </ul>
+        <p><strong>¡Haz de tu hogar un sitio limpio, saludable y amigable con el ambiente!</strong> <span class="paw-emoji">🐾</span></p>
+        <footer>
+            <p>Pedidos al: 320 230 3934</p>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = ["imagen1.png", "imagen2.png"];
+            const container = document.getElementById("dynamic-images");
+            images.forEach(src => {
+                const img = document.createElement("img");
+                img.src = src;
+                img.alt = `Imagen ${src}`;
+                container.appendChild(img);
+            });
+        });
+    </script>
+</body>
+</html>
